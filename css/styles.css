@@ -1,0 +1,100 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+h1 {
+    color: #ffffff;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+form {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+input, select {
+    margin-right: 10px;
+    padding: 5px;
+    background-color: #333333;
+    color: #ffffff;
+    border: 1px solid #555555;
+    flex: 1 1 200px;
+}
+
+button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    background-color: #007BFF;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    flex: 1 1 100px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#message {
+    margin-top: 10px;
+    color: green;
+}
+
+#productList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#productList li {
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #555555;
+    background-color: #333333;
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #888888;
+}
+
+@media (max-width: 600px) {
+    form, #productList {
+        width: 100%;
+    }
+
+    input, select, button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
